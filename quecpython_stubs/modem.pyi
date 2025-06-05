@@ -40,3 +40,13 @@ def getDevProductId():
 
     :return: If successful, it returns the device manufacture ID in string type. If failed, it returns the integer value -1.
     """
+
+def getDevMAC():
+    """Get Device MAC Address
+        
+    This method retrieves the device's MAC address.
+    Currently only supported on FCM360W modules.
+    
+    :return: On success - Returns the device MAC address as a string (format: "XX:XX:XX:XX:XX:XX")
+             On failure - Returns integer -1
+    """
