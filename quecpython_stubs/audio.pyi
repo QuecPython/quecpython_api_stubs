@@ -309,3 +309,133 @@ class Record(object):
         """
 
     AMRNB: int = ...  # AMR format.
+
+class TTS(object):
+    """Class Text-to-speech playback.
+
+    Currently supported models: EC600N series, EC800N series, EC600M-CN (LA, LE), EC800M-CN (LA, LE, GA), EG810MCN_GA, EC600U series, EC200U series, EG912U, EG915U, EG915N-EUAG.
+    Description: https://developer.quectel.com/doc/quecpython/API_reference/zh/medialib/audio.TTS.html
+    """
+
+    def __init__(self, device):
+        """Creates an TTS object.
+
+        :param device: Integer type. The output channel. 0 indicates earpiece, 1 indicates headphone, and 2 indicates speaker. See the table below for the specific channels supported by each module.
+        Channels Supported by the Module:
+        Module	Earpiece	Headphone	Speaker
+        EC200N/EC600N/EC800N	Supported	Unsupported	Unsupported
+        EC600M-CN(LA/LE)	Supported	Unsupported	Unsupported
+        EC800M-CN(LA/LE/GA)	Supported	Unsupported	Unsupported
+        EG810M	Supported	Unsupported	Unsupported
+        EG915N/EG912N	Supported	Unsupported	Unsupported
+        EG912U	Supported	Unsupported	Unsupported
+        EC200U	Unsupported	Unsupported	Supported
+        EC600U	Supported	Supported	Supported
+        EG915U	Supported	Supported	Unsupported
+        EC600S	Supported	Unsupported	Unsupported
+        EC600K/EC800K	Supported	Unsupported	Unsupported
+        EC800G-CN(GA/TT/LA)	Supported	Supported	Supported
+        EC600G-CN(LA)	Supported	Supported	Supported
+        """
+
+    def close(self):
+        """This method disables the TTS function.
+
+        :return: 0 - Successful execution; -1 - Failed execution.
+        """
+    
+    def play(self, priority, breakin, mode, str):
+        """This method starts TTS playback. For usage examples, click here.
+        
+        The playback task scheduling follows priority and break-in rules:
+        - Higher priority tasks (0-4, 4=highest) can interrupt lower priority ones
+        - Each priority group supports up to 10 queued tasks
+        - Break-in mode determines if current playback can be interrupted
+        
+        :param priority: Integer type. Play priority (0-4). Higher value = higher priority.
+        :param breakin: Integer type. Break-in mode. 0: not allowed to break in; 1: allowed to break in.
+        :param mode: Integer type. Play mode (lower 4 bits: encoding mode; higher 4 bits: WTTS mode). See TTS mode table.
+        :param str: String type. The string to be played.
+        :return: Returns an integer value.
+                0 - Playback started successfully
+                -1 - Playback failed
+                1 - Added to playback queue (cannot play immediately)
+                -2 - Priority group queue full (not added)
+        """
+
+    def stop(self):
+        """This method stops TTS playback.
+        
+        :return: 0 indicates success, -1 indicates failure.
+        """
+    
+    def stopAll(self):
+        """This method stops the entire playback queue.
+        
+        If TTS or audio is currently playing and there are other contents in the queue, 
+        calling this method will not only stop the current playback but also clear the queue.
+        If currently playing and the playback queue is empty, this method has the same effect as stop().
+        
+        :return: 0 indicates success, -1 indicates failure.
+        """
+    
+    def setCallback(self, cb):
+        """This method registers a user callback function to notify TTS playback status.
+        
+        Do not perform time-consuming or blocking operations in the callback function. 
+        It is recommended to only perform simple and short operations.
+        
+        :param cb: User callback function, function type. Function prototype:
+                   def cb(event):
+                       pass
+                   
+        Callback function parameter description:
+            event - Playback status, int type:
+                2 - Playback started
+                3 - Playback stopped
+                4 - Playback completed
+        
+        :return: 0 indicates success, -1 indicates failure.
+        """
+    
+    def getVolume(self):
+        """This method gets the current playback volume level.
+        
+        Volume value range [0 ~ 9], where 0 indicates mute (default is 4).
+        
+        :return: Integer volume value on success, -1 on failure.
+        """
+    
+    def setVolume(self, vol):
+        """This method sets the playback volume level.
+        
+        Volume value should be in the range [0 ~ 9], where 0 indicates mute.
+        
+        :param vol: Volume level, int type, range [0 ~ 9].
+        :return: 0 indicates success, -1 indicates failure.
+        """
+    
+    def getSpeed(self):
+        """This method gets the current playback speed.
+        
+        Speed value range [0 ~ 9], higher values indicate faster speed (default is 4).
+        
+        :return: Integer speed value on success, -1 on failure.
+        """
+    
+    def setSpeed(self, speed):
+        """This method sets the TTS playback speed.
+        
+        Speed value should be in the range [0 ~ 9].
+        
+        :param speed: Speed value, int type, range [0 ~ 9].
+        :return: 0 indicates success, -1 indicates failure.
+        """
+    
+    def getState(self):
+        """This method gets the TTS status.
+        
+        :return: 
+            0 - No TTS playback currently
+            -1 - TTS is currently playing
+        """
