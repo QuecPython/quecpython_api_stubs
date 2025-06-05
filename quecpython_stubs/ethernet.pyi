@@ -315,3 +315,23 @@ class YT8512H(object):
         active	bool	Whether NIC is activated. True and False respectively indicate enable and disable, which correspond to set_up and set_down.
         link	bool	Whether the network cable of NIC is connected. True and False respectively indicate the network cable is connected and is not connected.
         """
+
+
+    def speed(self):
+        """Get the current upstream and downstream speed of the network interface.
+        
+        :return: A tuple containing two integers: (tx_speed, rx_speed) 
+        Parameter    Type    Description
+        tx    int    Current data transmission rate in bits per second (bps)
+        rx    int    Current data reception rate in bits per second (bps)
+        """
+    
+    def node(self):
+        """Get the list of currently connected terminals to the network interface.
+        
+        :return: A list of tuples, each containing information about a connected terminal.
+        Parameter	 Type    Description
+        mac    bytearray    MAC address of the terminal (6 bytes)
+        ip    str    IP address of the terminal (in string format)
+        time    int    Connection duration in seconds
+        """
