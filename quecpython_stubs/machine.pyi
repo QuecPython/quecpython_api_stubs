@@ -849,3 +849,42 @@ class KeyPad(object):
 
         :return: 0 - Successful execution; -1 - Failed execution
         """
+
+
+class OneWire(object):
+    """Single-Wire Bus Communication
+
+    https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.OneWire.html
+
+    This class provides single-wire (1-Wire) communication functionality.
+    Currently only supported on EC200U/EC600U/EG912U/EG915U series modules.
+    """
+    
+    def __init__(self, GPIO):
+        """
+        Create a OneWire object.
+
+        :param GPIO: int type. The GPIO pin number to use (e.g., OneWire.GPIO19).
+        """
+    
+    def reset(self):
+        """Reset the bus and check device response
+        
+        Usage note: This method must be called before any read/write operations.
+        
+        :return: Integer value. 0 indicates proper response from device, -1 indicates no response.
+        """
+    
+    def read(self, len):
+        """Read data from the bus
+        
+        :param len: int type. Length of data to read.
+        :return: bytes object containing the read data.
+        """
+    
+    def write(self, data):
+        """Write data to the bus
+        
+        :param data: bytes type. Data to be written.
+        :return: Integer value 0.
+        """
