@@ -21,3 +21,9 @@ def open(name, mode='r', **kwarg):
     :return:uio object – Successful execution
     :raise: OSError - Failed execution
     """
+
+
+def close():
+    """Close the opened file.
+    
+    """

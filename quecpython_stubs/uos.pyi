@@ -200,9 +200,22 @@ def VfsLfs1(readsize: int, progsize: int, lookahead: int, pname: str, spi_port: 
     :return: VfsLfs1 object - Successful execution; OSError 19 - Failed execution.
     """
 
+
+def VfsEmmc(reserved: str):
+    """Initializes EMMC storage using SDIO communication
+
+    This method initializes EMMC storage for virtual file system (VFS) integration.
+    Currently only supported on EC200ACNLA platform.
+
+    :param reserved: str type. Reserved parameter (not currently used).
+    :return: vfs object representing the EMMC storage.
+    :raises Exception: If initialization fails (e.g., unsupported platform or hardware error)
+    """
+
 def mount(vfs_obj, path: str):
     """Mounts the file system in substantial form (such as littleFS or FATFS) to the virtual file system(VFS).
 
     :param vfs_obj: vfs object. The object of the file system.
     :param path: String type. The root directory of the file system.
     """
+

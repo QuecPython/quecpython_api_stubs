@@ -546,3 +546,104 @@ def writeCharaDesc(connect_id, handle, data):
     :param data:Bytearray type. Characteristic description data.
     :return:0- Successful execution; -1- Failed execution.
     """
+
+
+def exchangeMtu(self, connect_id, mtu_size):
+    """Send MTU exchange request. 
+    
+    The MTU exchange request should be initiated by the client side.
+    
+    :param connect_id: Connection ID, obtained when establishing the connection, integer type.
+    :param mtu_size: MTU size.
+    :return: 0 on success, -1 on failure.
+    """
+
+def smpSetConfig(self, io_cap, auth_req, passkey, timeout):
+    """Configure pairing capabilities.
+    
+    Pairing method selection process:
+    There are two modes for BLE SMP pairing: Legacy Pairing and Secure Connections Pairing.
+    The specific pairing method is determined through negotiation between the two parties after 
+    exchanging their IO capabilities.
+    
+    :param io_cap: Device input/output capability, integer type, default 3.
+        Value   Meaning
+        0       Display only, can display PIN code
+        1       Display only, can only display Yes/No, cannot display PIN code
+        2       Input only, can input PIN code
+        3       No input/output capability (default)
+        4       Both input and output capabilities
+    :param auth_req: Authentication request parameter, integer type, default 9.
+        Bit0    Bit1    Bit2    Bit3
+        0    No binding after pairing    Reserved    Disable MITM    Use Legacy Pairing
+        1    Bind after pairing    Reserved    Enable MITM    Use Secure Connections Pairing
+    :param passkey: PIN code to display during pairing, integer type, default 123456.
+    :param timeout: Pairing timeout, in units of 100ms, integer type, default 160.
+    :return: 0 on success, -1 on failure.
+    """
+
+def smpGetConfig(self):
+    """Query pairing capabilities.
+    
+    :return: On success, returns a tuple (io_cap, auth_req, passkey, timeout). 
+                On failure, returns -1.
+    
+    io_cap - Device input/output capability, integer type, default 3.
+        Value   Meaning
+        0       Display only, can display PIN code
+        1       Display only, can only display Yes/No, cannot display PIN code
+        2       Input only, can input PIN code
+        3       No input/output capability
+        4       Both input and output capabilities
+    auth_req - Authentication request parameter, integer type, default 9.
+        Bit0    Bit1    Bit2     Bit3
+        0    No binding after pairing    Reserved    Disable MITM    Use Legacy Pairing
+        1    Bind after pairing    Reserved    Enable MITM    Use Secure Connections Pairing
+    passkey - PIN code to display during pairing, integer type, default 123456.
+    timeout - Pairing timeout, in units of 100ms, integer type, default 160.
+    """
+
+def smpStartPair(self, connect_id):
+    """Start the BLE SMP pairing process. 
+    
+    SMP pairing is initiated by the client, but the server can also use this interface 
+    to notify the client to initiate an SMP pairing request.
+    
+    :param connect_id: Connection ID, obtained when establishing the connection, integer type.
+    :return: 0 on success, -1 on failure.
+    """
+
+def smpUserConfirm(self, connect_id, pair_operation, pin):
+    """Confirm pairing. 
+    
+    After receiving a pairing request, confirm whether to accept the pairing.
+    
+    :param connect_id: Connection ID, obtained when establishing the connection, integer type.
+    :param pair_operation: Pairing operation type, integer type.
+        Value   Meaning
+        0       Cancel pairing (only available during pairing process; will disconnect the BLE connection)
+        1       Confirm pairing without PIN (for Just Work or Numeric Comparison modes)
+        2       Confirm pairing with PIN (for Passkey mode)
+    :param pin: PIN code, integer type.
+    :return: 0 on success, -1 on failure.
+    """
+
+def smpGetPairedDevInfo(self):
+    """Get information about paired devices.
+    
+    :return: On success, returns a list of bytearray objects representing BLE addresses of paired devices.
+                On failure, returns -1.
+    """
+
+def smpRemovePairedDev(self, addr):
+    """Delete information for a specified paired device.
+    
+    :param addr: BLE address of the device to be deleted, bytearray type (6 bytes).
+    :return: 0 on success, -1 on failure.
+    """
+
+def smpCleanPairedDev(self):
+    """Delete information for all paired devices.
+    
+    :return: 0 on success, -1 on failure.
+    """
