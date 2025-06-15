@@ -3,7 +3,7 @@ Function:
 Miscellaneous Features, Module feature: shutdown, software restart, PWM and ADC.
 
 Descriptions taken from:
-https://python.quectel.com/doc/quecpython/API_reference/zh/peripherals/misc.html
+https://python.quectel.com/doc/quecpython/API_reference/en/peripherals/misc.html
 """
 
 

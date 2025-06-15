@@ -231,7 +231,7 @@ class Timer(object):
 class ExtInt(object):
     """This class configures I/O pins to interrupt when external events occur.
 
-    Descriptions: https://python.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.ExtInt.html
+    Descriptions: https://python.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.ExtInt.html
     """
 
     def __init__(self, GPIOn, mode, pull, callback):
@@ -290,7 +290,7 @@ class ExtInt(object):
 class RTC(object):
     """This class provides methods of getting and setting RTC.
 
-    Descriptions: https://python.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.RTC.html
+    Descriptions: https://python.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.RTC.html
 
     For BC25PA series module, it provides the feature of waking up modules from deep sleep and software power-off state.
     Only EC600U and EC200U series modules support automatic power-on. It means that if you power off the module after RTC alarm is set, the module will power on automatically when the alarm time expires.
@@ -349,7 +349,7 @@ class RTC(object):
 class I2C(object):
     """Two-wire Serial Protocol
 
-    Descriptions: https://python.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.I2C.html
+    Descriptions: https://python.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.I2C.html
 
     This class is designed for the two-wire serial protocol for communication between devices.
     """
@@ -398,7 +398,7 @@ class I2C(object):
 class I2C_simulation(object):
     """This class is designed for GPIO simulating standard I2C protocol.
 
-    Descriptions: https://python.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.I2C_simulation.html
+    Descriptions: https://python.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.I2C_simulation.html
 
     Except for creating the object, all other operations (read and write) are consistent with I2C communication.
     """
@@ -437,7 +437,7 @@ class I2C_simulation(object):
 class SPI(object):
     """Serial Peripheral Interface Bus Protocol
 
-    Descriptions: https://python.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.SPI.html
+    Descriptions: https://python.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.SPI.html
 
     This class provides bus protocol of serial peripheral interface (SPI) .
     """
@@ -506,7 +506,7 @@ class SPI(object):
 class SoftSPI(object):
     """Software Implementation of SPI Bus Protocol.
 
-    Descriptions: https://python.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.SoftSPI.html
+    Descriptions: https://python.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.SoftSPI.html
 
     This class provides bus protocol of Serial Peripheral Interface (SPI).
     EC600E/EC800E module supports this feature.
@@ -575,7 +575,7 @@ class SoftSPI(object):
 class LCD(object):
     """LCD Driver
 
-    Descriptions: https://python.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.LCD.html
+    Descriptions: https://python.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.LCD.html
 
     This class controls LCD.
     Supported module models are as follows:
@@ -783,7 +783,7 @@ class LCD(object):
 class WDT(object):
     """Watchdog Timer
 
-    Descriptions: https://python.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.WDT.html
+    Descriptions: https://python.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.WDT.html
 
     This class provides system restart operation when application program exception occurs.
     """
@@ -810,7 +810,7 @@ class WDT(object):
 class KeyPad(object):
     """Matrix Keyboard
 
-    Descriptions: https://python.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.KeyPad.html
+    Descriptions: https://python.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.KeyPad.html
 
     This class provides the matrix keyboard interface.
     EC600SCN_LB, EC800NCN_LA, EC600NCN_LC, EC200UCN_LB, EC600UCN_LB, EC600MCN_LA, EC800MCN_LA, EC800MCN_GA, EG912NEN_AA series module is supported this feature.
@@ -854,7 +854,7 @@ class KeyPad(object):
 class OneWire(object):
     """Single-Wire Bus Communication
 
-    https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.OneWire.html
+    https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.OneWire.html
 
     This class provides single-wire (1-Wire) communication functionality.
     Currently only supported on EC200U/EC600U/EG912U/EG915U series modules.

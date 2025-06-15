@@ -5,7 +5,7 @@ This module realizes subsets of the corresponding CPython module.
 See CPython file collections for more detailed information: https://docs.python.org/3/library/collections.html
 
 Descriptions taken from:
-https://python.quectel.com/doc/quecpython/API_reference/zh/stdlib/ucollections.html
+https://python.quectel.com/doc/quecpython/API_reference/en/stdlib/ucollections.html
 """
 
 
