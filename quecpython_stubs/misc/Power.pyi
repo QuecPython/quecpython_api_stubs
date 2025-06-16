@@ -3,7 +3,7 @@ Function:
 Module features: power off, reboot software, get the power-on reason, get the last power-off reason and get battery voltage.
 
 Descriptions taken from:
-https://python.quectel.com/doc/API_reference/en/peripherals/misc.Power.html
+https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/misc.Power.html
 """
 
 def powerDown():

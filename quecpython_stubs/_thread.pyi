@@ -3,7 +3,7 @@ Function:
 _thread module contains features related to thread operations, and provides methods for creating and deleting threads, and interfaces related to mutex and semaphore.
 
 Descriptions taken from:
-https://python.quectel.com/doc/API_reference/en/stdlib/_thread.html
+https://developer.quectel.com/doc/quecpython/API_reference/en/stdlib/_thread.html
 """
 
 

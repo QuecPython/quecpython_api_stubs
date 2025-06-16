@@ -3,7 +3,7 @@ Function:
 The request feature is used for sending an HTTP request to a server, fetching data from a server, or submitting data to a server. Multiple request methods, including GET, POST, and PUT are supported.
 
 Descriptions taken from:
-https://python.quectel.com/doc/API_reference/en/networklib/request.html
+https://developer.quectel.com/doc/quecpython/API_reference/en/networklib/request.html
 """
 
 

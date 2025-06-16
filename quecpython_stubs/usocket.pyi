@@ -4,7 +4,7 @@ This module provides access to the BSD socket interface, and realizes subsets of
 See CPython file socket for more detailed information: https://docs.python.org/3.5/library/socket.html#module-socket
 
 Descriptions taken from:
-https://python.quectel.com/doc/API_reference/zh/stdlib/usocket.html
+https://developer.quectel.com/doc/quecpython/API_reference/zh/stdlib/usocket.html
 """
 
 

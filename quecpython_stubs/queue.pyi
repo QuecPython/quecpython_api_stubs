@@ -3,7 +3,7 @@ Function:
 This feature is used for inter-thread communication.
 
 Descriptions taken from:
-https://python.quectel.com/doc/API_reference/en/syslib/Queue.html
+https://developer.quectel.com/doc/quecpython/API_reference/en/syslib/Queue.html
 """
 
 

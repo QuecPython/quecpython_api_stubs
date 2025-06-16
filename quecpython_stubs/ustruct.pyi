@@ -4,7 +4,7 @@ Module feature: ustruct module realizes subsets of the corresponding CPython mod
 See CPython file struct for detailed information: https://docs.python.org/3.5/library/struct.html#module-struct
 
 Descriptions taken from:
-https://python.quectel.com/doc/API_reference/zh/stdlib/ustruct.html
+https://developer.quectel.com/doc/quecpython/API_reference/zh/stdlib/ustruct.html
 
 The format string is the mechanism used to specify the expected layout when packing and unpacking data.
 Format strings are built through the format character of the specified data type that to be packed or unpacked.

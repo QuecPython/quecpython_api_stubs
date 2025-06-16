@@ -3,7 +3,7 @@ Function:
 This document introduces how to execute Python scripts on the command line or in the code.
 
 Descriptions taken from:
-https://python.quectel.com/doc/API_reference/en/syslib/example.html
+https://developer.quectel.com/doc/quecpython/API_reference/en/syslib/example.html
 """
 
 

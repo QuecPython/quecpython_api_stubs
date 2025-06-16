@@ -3,7 +3,7 @@ Function:
 This feature subscribes to messages and publishes one-to-many broadcasts with multithreading, similar to an internal MQTT protocol.
 
 Descriptions taken from:
-https://python.quectel.com/doc/API_reference/en/syslib/sys_bus.html
+https://developer.quectel.com/doc/quecpython/API_reference/en/syslib/sys_bus.html
 """
 
 

@@ -4,7 +4,7 @@ This feature provides you with the SIM Card APIs, such as the methods of getting
 The IMSI, ICCID, and phone number can be gotten only when the SIM card status is 1. You can call sim.getstatus() to get the current SIM card status.
 
 Descriptions taken from:
-https://python.quectel.com/doc/API_reference/en/iotlib/sim.html
+https://developer.quectel.com/doc/quecpython/API_reference/en/iotlib/sim.html
 """
 
 def genericAccess(simId, cmd):

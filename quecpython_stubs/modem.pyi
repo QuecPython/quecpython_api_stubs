@@ -3,7 +3,7 @@ Function:
 The modem module provides the method of reading device information.
 
 Descriptions taken from:
-https://python.quectel.com/doc/API_reference/en/syslib/modem.html
+https://developer.quectel.com/doc/quecpython/API_reference/en/syslib/modem.html
 """
 
 

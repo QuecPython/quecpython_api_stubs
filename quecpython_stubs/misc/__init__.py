@@ -3,7 +3,7 @@ Function:
 Miscellaneous Features, Module feature: shutdown, software restart, PWM and ADC.
 
 Descriptions taken from:
-https://python.quectel.com/doc/API_reference/zh/peripherals/misc.html
+https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/misc.html
 """
 
 
@@ -18,7 +18,7 @@ def antennaSecRXOffCtrl(*args):
 class PowerKey(object):
     """PowerKey Callback and Registration.
 
-    Descriptions: https://python.quectel.com/doc/API_reference/en/peripherals/misc.PowerKey.html
+    Descriptions: https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/misc.PowerKey.html
 
     This class provides the feature of triggering the callback function when registering the powerkey event.
     """
@@ -36,7 +36,7 @@ class PowerKey(object):
 class PWM(object):
     """Pulse Width Modulation.
 
-    Descriptions: https://python.quectel.com/doc/API_reference/en/peripherals/misc.PWM.html
+    Descriptions: https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/misc.PWM.html
 
     This class provides the feature of PWM output.
     Note: BC25 series module does not support this feature.
@@ -86,7 +86,7 @@ class PWM(object):
 class ADC(object):
     """Voltage Collection.
 
-    Descriptions: https://python.quectel.com/doc/API_reference/en/peripherals/misc.ADC.html
+    Descriptions: https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/misc.ADC.html
 
     This class collects voltage signals.
     """
@@ -118,7 +118,7 @@ class ADC(object):
 class USB(object):
     """USB Plug-in/Out Detection
 
-    Descriptions: https://python.quectel.com/doc/API_reference/en/peripherals/misc.USB.html
+    Descriptions: https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/misc.USB.html
 
     This class provides USB plug-in/out detection.
     Note: EC600S, EC600N, EC800N, EG912N, EC200U, EC600U, EG915U, EC600M, EC800M, EC200A series modules support this feature.

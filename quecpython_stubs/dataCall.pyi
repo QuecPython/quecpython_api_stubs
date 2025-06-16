@@ -9,7 +9,7 @@ Failure to configure or incorrect configuration may result in the module's failu
 For information on configuring the APN, refer to the dataCall.setPDPContext method.
 
 Descriptions taken from:
-https://python.quectel.com/doc/API_reference/en/iotlib/dataCall.html
+https://developer.quectel.com/doc/quecpython/API_reference/en/iotlib/dataCall.html
 """
 
 

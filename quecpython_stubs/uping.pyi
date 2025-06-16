@@ -4,7 +4,7 @@ This class pings IPv4 request packages.
 Note: 1. It may occur that the socket cannot be set up at the host address, causing a connection error. 2. Determine the ping period by initializing COUNT and INTERVAL.
 
 Descriptions taken from:
-https://python.quectel.com/doc/API_reference/en/networklib/uping.html
+https://developer.quectel.com/doc/quecpython/API_reference/en/networklib/uping.html
 """
 
 

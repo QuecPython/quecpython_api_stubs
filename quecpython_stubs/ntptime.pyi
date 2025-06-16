@@ -5,7 +5,7 @@ This feature is used for time synchronization.
 Note: You need to confirm with the carrier whether the current SIM card supports this feature.
 
 Descriptions taken from:
-https://python.quectel.com/doc/API_reference/en/networklib/ntptime.html
+https://developer.quectel.com/doc/quecpython/API_reference/en/networklib/ntptime.html
 """
 
 

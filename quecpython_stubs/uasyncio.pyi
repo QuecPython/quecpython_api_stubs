@@ -4,7 +4,7 @@ uasyncio is an asynchronous I/O library in MicroPython, also a lightweight subse
 uasyncio , with a small code size and low memory footprint, is suitable for embedded systems and resource–constrained devices. It provides a set of APIs and tools to create and manage coroutines, network and protocol–related classes that support asynchronous I/O.
 
 Descriptions taken from:
-https://python.quectel.com/doc/API_reference/en/componentlib/uasyncio.html
+https://developer.quectel.com/doc/quecpython/API_reference/en/componentlib/uasyncio.html
 """
 
 

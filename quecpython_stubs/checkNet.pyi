@@ -3,7 +3,7 @@ Function:
 The checkNet module provides methods to detect whether the QuecPython module's network is ready, while also providing troubleshooting methods and steps for network exceptions.
 
 Descriptions taken from:
-https://python.quectel.com/doc/API_reference/zh/iotlib/checkNet.html
+https://developer.quectel.com/doc/quecpython/API_reference/zh/iotlib/checkNet.html
 """
 
 

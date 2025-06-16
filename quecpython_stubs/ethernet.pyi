@@ -8,7 +8,7 @@ The following example is only for NIC application configuration on the module. E
 Some NICs are not applicable to the following examples. Please use NICs according to the corresponding instructions for different NIC drivers.
 
 Descriptions taken from:
-https://python.quectel.com/doc/API_reference/en/peripherals/ethernet.html
+https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/ethernet.html
 """
 
 
@@ -18,7 +18,7 @@ class W5500(object):
     This class controls Ethernet NIC devices of W5500.
     Currently, only EC600N and EC600U module series support this feature.
 
-    Descriptions: https://python.quectel.com/doc/API_reference/en/peripherals/ethernet.W5500.html
+    Descriptions: https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/ethernet.W5500.html
     """
 
     def __init__(self, mac, ip='', subnet='', gateway='', spi_port=-1, spi_cs_pin=-1, extint_pin=-1, reset_pin=-1, work_mode=0):
@@ -92,7 +92,7 @@ class DM9051(object):
     This class controls Ethernet NIC devices of DM9051.
     Currently, only EC600N module series support this feature.
 
-    Descriptions: https://python.quectel.com/doc/API_reference/en/peripherals/ethernet.DM9051.html
+    Descriptions: https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/ethernet.DM9051.html
     """
 
     def __init__(self, mac, ip='', subnet='', gateway='', spi_port=-1,spi_cs_pin=-1):
@@ -156,7 +156,7 @@ class CH395(object):
     This class controls Ethernet NIC devices of CH395.
     Currently, only EC600N module series support this feature.
 
-    Descriptions: https://python.quectel.com/doc/API_reference/en/peripherals/ethernet.CH395.html
+    Descriptions: https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/ethernet.CH395.html
     """
 
     def __init__(self, mac, ip='', subnet='', gateway='', spi_port=-1, spi_cs_pin=-1, extint_pin=-1, reset_pin=-1, work_mode=0):
@@ -241,7 +241,7 @@ class YT8512H(object):
     This class controls Ethernet NIC devices of YT8512H and SZ18201.
     Currently, only EC600A module series support this feature.
 
-    Descriptions: https://python.quectel.com/doc/API_reference/en/peripherals/ethernet.YT8512H.html
+    Descriptions: https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/ethernet.YT8512H.html
     """
 
     def __init__(self, mac, ip='', subnet='', gateway=''):

@@ -4,7 +4,7 @@ QR Code Display
 Feature introduction: generate a corresponding QR code according to the input content.
 
 Descriptions taken from:
-https://python.quectel.com/doc/API_reference/en/medialib/qrcode.html#Display-QR-Code
+https://developer.quectel.com/doc/quecpython/API_reference/en/medialib/qrcode.html#Display-QR-Code
 """
 
 

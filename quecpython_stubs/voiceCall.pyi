@@ -17,7 +17,7 @@ BC25/EC600G/EC800G/BG95 series module does not support voice call.
 For other modules, a custom version is required to support voice call.
 
 Descriptions taken from:
-https://python.quectel.com/doc/API_reference/en/iotlib/voiceCall.html
+https://developer.quectel.com/doc/quecpython/API_reference/en/iotlib/voiceCall.html
 """
 
 def setAutoAnswer(seconds):

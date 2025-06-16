@@ -5,7 +5,7 @@ The bt module provides Classic Bluetooth related features, including HFP, A2DP, 
 Currently, only EC200U/EC600U/EG915U/EG912U series module supports bt feature.
 
 Descriptions taken from:
-https://python.quectel.com/doc/API_reference/en/btlib/bt.html
+https://developer.quectel.com/doc/quecpython/API_reference/en/btlib/bt.html
 """
 
 

@@ -3,7 +3,7 @@ Function:
 This feature is used to create MQTT clients to publish and subscribe to topics.
 
 Descriptions taken from:
-https://python.quectel.com/doc/API_reference/en/networklib/umqtt.html
+https://developer.quectel.com/doc/quecpython/API_reference/en/networklib/umqtt.html
 """
 
 

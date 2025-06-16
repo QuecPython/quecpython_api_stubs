@@ -4,7 +4,7 @@ This module provides the class of Wi-Fi positioning and gets the module longitud
 Currently, only EC600S/EC600N/EC800N/EC200U/EC600U/EG912U/EG915U series module supports this feature.
 
 Descriptions taken from:
-https://python.quectel.com/doc/API_reference/en/gnsslib/wifilocator.html
+https://developer.quectel.com/doc/quecpython/API_reference/en/gnsslib/wifilocator.html
 """
 
 

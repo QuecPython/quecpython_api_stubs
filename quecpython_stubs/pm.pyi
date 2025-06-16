@@ -4,7 +4,7 @@ Power Management
 When there is no service being processed, the system is in the sleep status and enters a low-power mode.
 
 Descriptions taken from:
-https://python.quectel.com/doc/API_reference/en/syslib/pm.html
+https://developer.quectel.com/doc/quecpython/API_reference/en/syslib/pm.html
 """
 
 

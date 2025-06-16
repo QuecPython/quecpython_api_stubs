@@ -5,7 +5,7 @@ Note: It is recommended that you should configure the APN information of the cor
 See dataCall.setPDPContext for methods of how to configure the APN information.
 
 Descriptions taken from:
-https://python.quectel.com/doc/API_reference/en/iotlib/net.html
+https://developer.quectel.com/doc/quecpython/API_reference/en/iotlib/net.html
 """
 
 

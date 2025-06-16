@@ -4,7 +4,7 @@ This feature provides the APIs of the built-in GNSS feature.
 Only EC200UCNAA/EC200UCNLA/EC200UEUAA/EC800MCNGA/EC800GCNGA series module supports this feature.
 
 Descriptions taken from:
-https://python.quectel.com/doc/API_reference/en/gnsslib/quecgnss.html
+https://developer.quectel.com/doc/quecpython/API_reference/en/gnsslib/quecgnss.html
 """
 
 

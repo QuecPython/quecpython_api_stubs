@@ -3,7 +3,7 @@ Function:
 The app_fota module is used for user file upgrades.
 
 Descriptions taken from:
-https://python.quectel.com/doc/API_reference/en/syslib/app_fota.html
+https://developer.quectel.com/doc/quecpython/API_reference/en/syslib/app_fota.html
 """
 
 

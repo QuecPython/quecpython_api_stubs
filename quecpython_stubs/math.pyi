@@ -4,7 +4,7 @@ Math module provides mathematical operation functions, and realizes subsets of t
 See CPython file math for more detailed information: https://docs.python.org/3.5/library/math.html#module-math
 
 Descriptions taken from:
-https://python.quectel.com/doc/API_reference/zh/stdlib/math.html
+https://developer.quectel.com/doc/quecpython/API_reference/zh/stdlib/math.html
 """
 
 def pow(x, y):

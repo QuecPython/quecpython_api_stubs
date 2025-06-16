@@ -3,7 +3,7 @@ Function:
 This feature establishes a WebSocket connection.
 
 Descriptions taken from:
-https://python.quectel.com/doc/API_reference/en/networklib/uwebsocket.html
+https://developer.quectel.com/doc/quecpython/API_reference/en/networklib/uwebsocket.html
 """
 
 
