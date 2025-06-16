@@ -4,7 +4,7 @@ ujson module realizes the convertion between the Python data object and the JSON
 See CPython file json for more detailed information: https://docs.python.org/3.5/library/json.html#module-json.
 
 Descriptions taken from:
-https://python.quectel.com/doc/API_reference/zh/stdlib/ujson.html
+https://developer.quectel.com/doc/quecpython/API_reference/zh/stdlib/ujson.html
 """
 
 

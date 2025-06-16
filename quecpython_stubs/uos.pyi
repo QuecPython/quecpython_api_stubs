@@ -3,7 +3,7 @@ Function:
 uos module contains file system access and mounting building, and realizes subsets of the corresponding CPython module. See CPython file os for more detailed information.
 
 Descriptions taken from:
-https://python.quectel.com/doc/API_reference/zh/stdlib/uos.html
+https://developer.quectel.com/doc/quecpython/API_reference/zh/stdlib/uos.html
 """
 from typing import Callable
 

@@ -3,7 +3,7 @@ Function:
 A log is a tool used to record the runtime state of an application in program development, as well as help developers diagnose and troubleshoot problems. Developers can quickly identify the root causes of problems and better understand the behaviors and performance of applications by viewing logs. log feature can output different log levels, including the DEBUG level, WARNING level, and ERROR level.
 
 Descriptions taken from:
-https://python.quectel.com/doc/API_reference/en/syslib/log.html
+https://developer.quectel.com/doc/quecpython/API_reference/en/syslib/log.html
 """
 
 

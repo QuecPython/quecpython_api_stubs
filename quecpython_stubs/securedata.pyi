@@ -5,7 +5,7 @@ The module provides a bare flash area and a dedicated read/write interface for y
 Besides, the module also provides a storage and read interface but deletion interface is not provided.
 
 Descriptions taken from:
-https://python.quectel.com/doc/API_reference/en/syslib/securedata.html
+https://developer.quectel.com/doc/quecpython/API_reference/en/syslib/securedata.html
 """
 
 

@@ -4,7 +4,7 @@ utime module gets the current time, measures the time interval and provides the 
 See CPython file time for more detailed information: https://docs.python.org/3.5/library/time.html#module-time
 
 Descriptions taken from:
-https://python.quectel.com/doc/API_reference/zh/stdlib/utime.html
+https://developer.quectel.com/doc/quecpython/API_reference/zh/stdlib/utime.html
 """
 
 

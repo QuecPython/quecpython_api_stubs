@@ -4,7 +4,7 @@ gc module realizes the garbage collection of the memory, and subsets of the corr
 See CPython file gc for more detailed information: https://docs.python.org/3.5/library/gc.html#module-gc
 
 Descriptions taken from:
-https://python.quectel.com/doc/API_reference/zh/stdlib/gc.html
+https://developer.quectel.com/doc/quecpython/API_reference/zh/stdlib/gc.html
 """
 
 

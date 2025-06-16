@@ -4,7 +4,7 @@ This feature is used to configure the system parameter and features.
 Applicable modules: EC100Y(V0009) and above; EC600S(V0002) and above.
 
 Descriptions taken from:
-https://python.quectel.com/doc/API_reference/en/syslib/system.html
+https://developer.quectel.com/doc/quecpython/API_reference/en/syslib/system.html
 """
 
 

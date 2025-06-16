@@ -11,7 +11,7 @@ In EG912U series module: EG912UGL_AA support the wifiScan feature.
 In EG915U series module: EG915UEU_AB/EG915ULA_AB support the wifiScan feature.
 
 Descriptions taken from:
-https://python.quectel.com/doc/API_reference/en/gnsslib/wifiScan.html
+https://developer.quectel.com/doc/quecpython/API_reference/en/gnsslib/wifiScan.html
 """
 
 

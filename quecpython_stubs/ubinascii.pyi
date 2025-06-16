@@ -4,7 +4,7 @@ The module realizes the conversion between binary data and various ASCII encodin
 See CPython file binascii for more detailed information: https://docs.python.org/3.5/library/binascii.html#module-binascii
 
 Descriptions taken from:
-https://python.quectel.com/doc/API_reference/zh/stdlib/ubinascii.html
+https://developer.quectel.com/doc/quecpython/API_reference/zh/stdlib/ubinascii.html
 """
 
 

@@ -3,7 +3,7 @@ Function:
 The ble module provides BLE GATT Server (slave) and BLE GATT Client (master) features based on the BLE 4.2 protocol.
 
 Descriptions taken from:
-https://python.quectel.com/doc/API_reference/en/btlib/ble.html
+https://developer.quectel.com/doc/quecpython/API_reference/en/btlib/ble.html
 """
 
 

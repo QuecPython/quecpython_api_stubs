@@ -4,14 +4,14 @@ This module contains features related to the hardware on a particular circuit bo
 Most of the features in this module allow direct and unrestricted access to and control of the hardware on the system.
 
 Descriptions taken from:
-https://python.quectel.com/doc/API_reference/en/peripherals/machine.html
+https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.html
 """
 
 
 class Pin(object):
     """Pin
 
-    Descriptions: https://python.quectel.com/doc/API_reference/en/peripherals/machine.Pin.html)
+    Descriptions: https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.Pin.html)
 
     Description of GPIO corresponding pin numbers: GPIO pin numbers provided in the document correspond to external pin numbers of the module.
     For example, for EC100Y-CN module, GPIO1 corresponds to pin22, which is an external pin number of the module.
@@ -112,7 +112,7 @@ class Pin(object):
 class UART(object):
     """UART
 
-    Descriptions: https://python.quectel.com/doc/API_reference/en/peripherals/machine.UART.html
+    Descriptions: https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.UART.html
 
     This class transmits data through the UART.
     When UART1 of EC600M/EC800M/EG912N series module is in flowctl=1 state, modules only map UART1 to different pins but flow control is not enabled.
@@ -192,7 +192,7 @@ class UART(object):
 class Timer(object):
     """Control Hardware Timers
 
-    Descriptions: https://python.quectel.com/doc/API_reference/en/peripherals/machine.Timer.html
+    Descriptions: https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/machine.Timer.html
 
     This class provides the method of controlling hardware timer.
     Note: For Timer0 to Timer3, each of them can only execute one task at the same time and multiple objects cannot use the same timer.
@@ -231,7 +231,7 @@ class Timer(object):
 class ExtInt(object):
     """This class configures I/O pins to interrupt when external events occur.
 
-    Descriptions: https://python.quectel.com/doc/API_reference/zh/peripherals/machine.ExtInt.html
+    Descriptions: https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.ExtInt.html
     """
 
     def __init__(self, GPIOn, mode, pull, callback):
@@ -290,7 +290,7 @@ class ExtInt(object):
 class RTC(object):
     """This class provides methods of getting and setting RTC.
 
-    Descriptions: https://python.quectel.com/doc/API_reference/zh/peripherals/machine.RTC.html
+    Descriptions: https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.RTC.html
 
     For BC25PA series module, it provides the feature of waking up modules from deep sleep and software power-off state.
     Only EC600U and EC200U series modules support automatic power-on. It means that if you power off the module after RTC alarm is set, the module will power on automatically when the alarm time expires.
@@ -349,7 +349,7 @@ class RTC(object):
 class I2C(object):
     """Two-wire Serial Protocol
 
-    Descriptions: https://python.quectel.com/doc/API_reference/zh/peripherals/machine.I2C.html
+    Descriptions: https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.I2C.html
 
     This class is designed for the two-wire serial protocol for communication between devices.
     """
@@ -398,7 +398,7 @@ class I2C(object):
 class I2C_simulation(object):
     """This class is designed for GPIO simulating standard I2C protocol.
 
-    Descriptions: https://python.quectel.com/doc/API_reference/zh/peripherals/machine.I2C_simulation.html
+    Descriptions: https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.I2C_simulation.html
 
     Except for creating the object, all other operations (read and write) are consistent with I2C communication.
     """
@@ -437,7 +437,7 @@ class I2C_simulation(object):
 class SPI(object):
     """Serial Peripheral Interface Bus Protocol
 
-    Descriptions: https://python.quectel.com/doc/API_reference/zh/peripherals/machine.SPI.html
+    Descriptions: https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.SPI.html
 
     This class provides bus protocol of serial peripheral interface (SPI) .
     """
@@ -506,7 +506,7 @@ class SPI(object):
 class SoftSPI(object):
     """Software Implementation of SPI Bus Protocol.
 
-    Descriptions: https://python.quectel.com/doc/API_reference/zh/peripherals/machine.SoftSPI.html
+    Descriptions: https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.SoftSPI.html
 
     This class provides bus protocol of Serial Peripheral Interface (SPI).
     EC600E/EC800E module supports this feature.
@@ -575,7 +575,7 @@ class SoftSPI(object):
 class LCD(object):
     """LCD Driver
 
-    Descriptions: https://python.quectel.com/doc/API_reference/zh/peripherals/machine.LCD.html
+    Descriptions: https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.LCD.html
 
     This class controls LCD.
     Supported module models are as follows:
@@ -783,7 +783,7 @@ class LCD(object):
 class WDT(object):
     """Watchdog Timer
 
-    Descriptions: https://python.quectel.com/doc/API_reference/zh/peripherals/machine.WDT.html
+    Descriptions: https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.WDT.html
 
     This class provides system restart operation when application program exception occurs.
     """
@@ -810,7 +810,7 @@ class WDT(object):
 class KeyPad(object):
     """Matrix Keyboard
 
-    Descriptions: https://python.quectel.com/doc/API_reference/zh/peripherals/machine.KeyPad.html
+    Descriptions: https://developer.quectel.com/doc/quecpython/API_reference/zh/peripherals/machine.KeyPad.html
 
     This class provides the matrix keyboard interface.
     EC600SCN_LB, EC800NCN_LA, EC600NCN_LC, EC200UCN_LB, EC600UCN_LB, EC600MCN_LA, EC800MCN_LA, EC800MCN_GA, EG912NEN_AA series module is supported this feature.

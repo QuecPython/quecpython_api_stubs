@@ -7,7 +7,7 @@ Currently, for L76K module, the data got through the interface provided by this 
 Note: Currently, only EC600S/EC600N/EC800N/EC200U/EC600U/EC600M/EC800M series module supports this method.
 
 Descriptions taken from:
-https://python.quectel.com/doc/API_reference/en/gnsslib/gnss.html
+https://developer.quectel.com/doc/quecpython/API_reference/en/gnsslib/gnss.html
 """
 
 

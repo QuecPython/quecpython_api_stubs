@@ -3,7 +3,7 @@ Function:
 urandom module provides the tool for random number generation.
 
 Descriptions taken from:
-https://python.quectel.com/doc/API_reference/zh/stdlib/urandom.html
+https://developer.quectel.com/doc/quecpython/API_reference/zh/stdlib/urandom.html
 """
 
 

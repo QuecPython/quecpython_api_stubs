@@ -5,7 +5,7 @@ Module feature: USB network card.
 Note: EC600S, EC600N, EC800N, EC200U, EC600U and EC600M series modules support this feature.
 
 Descriptions taken from:
-https://python.quectel.com/doc/API_reference/en/peripherals/misc.USBNET.html
+https://developer.quectel.com/doc/quecpython/API_reference/en/peripherals/misc.USBNET.html
 """
 
 

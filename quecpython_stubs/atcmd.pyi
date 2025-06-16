@@ -3,7 +3,7 @@ Function:
 This module provides a method for sending AT commands, allowing the QuecPython module to send AT commands through Python code.
 
 Descriptions taken from:
-https://python.quectel.com/doc/API_reference/en/syslib/atcmd.html
+https://developer.quectel.com/doc/quecpython/API_reference/en/syslib/atcmd.html
 """
 
 

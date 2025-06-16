@@ -6,7 +6,7 @@ Note: If the preview feature is needed, please initialize the LCD object first b
 
 
 Descriptions taken from:
-https://python.quectel.com/doc/API_reference/en/medialib/camera.html
+https://developer.quectel.com/doc/quecpython/API_reference/en/medialib/camera.html
 """
 
 
@@ -15,7 +15,7 @@ class CamPreview(object):
 
     Class feature: Camera previewing.
     Note: Please initialize the LCD before using this feature.
-    Descriptions: https://python.quectel.com/doc/API_reference/en/medialib/camera.CamPreview.html
+    Descriptions: https://developer.quectel.com/doc/quecpython/API_reference/en/medialib/camera.CamPreview.html
     """
 
     def __init__(self, model, cam_w, cam_h, lcd_w, lcd_h, perview_level):
@@ -50,7 +50,7 @@ class CamDecoder(object):
     """Camera code scanning.
 
     Note: Please initialize the LCD before enabling preview feature.
-    Descriptions: https://python.quectel.com/doc/API_reference/en/medialib/camera.CamDecoder.html
+    Descriptions: https://developer.quectel.com/doc/quecpython/API_reference/en/medialib/camera.CamDecoder.html
     """
 
     def __init__(self, model, decode_level, cam_w, cam_h, perview_level, lcd_w, lcd_h):
@@ -121,7 +121,7 @@ class CamCapture(object):
 
     Class feature: Camera capturing and saving.
     Note: Please initialize the LCD before using this feature.
-    Descriptions: https://python.quectel.com/doc/API_reference/en/medialib/camera.CamCapture.html
+    Descriptions: https://developer.quectel.com/doc/quecpython/API_reference/en/medialib/camera.CamCapture.html
     """
 
     def __init__(self, model, cam_w, cam_h, perview_level, lcd_w, lcd_h):

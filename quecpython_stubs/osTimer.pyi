@@ -3,7 +3,7 @@ Function:
 The module provides a timer interface for the underlying OS. The OS timer timeout will trigger the bound callback function.
 
 Descriptions taken from:
-https://python.quectel.com/doc/API_reference/en/syslib/osTimer.html
+https://developer.quectel.com/doc/quecpython/API_reference/en/syslib/osTimer.html
 """
 
 

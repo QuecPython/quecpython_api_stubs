@@ -4,7 +4,7 @@ uio contains additional types of stream (file-like) objects and helper functions
 For more information, refer to the original CPython documentation: https://docs.python.org/3.5/library/io.html#module-io.
 
 Descriptions taken from:
-https://python.quectel.com/doc/API_reference/zh/stdlib/uio.html
+https://developer.quectel.com/doc/quecpython/API_reference/zh/stdlib/uio.html
 """
 
 

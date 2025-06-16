@@ -3,7 +3,7 @@ Function:
 ussl realizes the encrypted communication using TLS/SSL protocol, mainly for unidirectional and bidirectional authentication.
 
 Descriptions taken from:
-https://python.quectel.com/doc/API_reference/en/networklib/ussl.html
+https://developer.quectel.com/doc/quecpython/API_reference/en/networklib/ussl.html
 """
 from usocket import socket
 

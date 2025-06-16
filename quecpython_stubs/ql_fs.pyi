@@ -3,7 +3,7 @@ Function:
 This feature is used for advanced operations of files.
 
 Descriptions taken from:
-https://python.quectel.com/doc/API_reference/en/syslib/ql_fs.html
+https://developer.quectel.com/doc/quecpython/API_reference/en/syslib/ql_fs.html
 """
 
 
