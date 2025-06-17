@@ -3,7 +3,8 @@ Function:
 This module provides a method for sending AT commands, allowing the QuecPython module to send AT commands through Python code.
 
 Descriptions taken from:
-https://python.quectel.com/doc/quecpython/API_reference/zh/syslib/atcmd.html"""
+https://python.quectel.com/doc/quecpython/API_reference/en/syslib/atcmd.html
+"""
 
 
 def sendSync(atcmd, resp, include_str, timeout):
