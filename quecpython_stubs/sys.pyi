@@ -3,7 +3,7 @@ Function:
 System Related Features.
 
 Descriptions taken from:
-https://python.quectel.com/doc/API_reference/zh/stdlib/sys.html
+https://python.quectel.com/doc/quecpython/API_reference/en/stdlib/sys.html
 """
 
 

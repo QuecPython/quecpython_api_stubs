@@ -3,7 +3,7 @@ Function:
 The module contains various audio features, including audio playback, TTS (text-to-speech) playback, recording and so on.
 
 Descriptions taken from:
-https://python.quectel.com/doc/API_reference/en/medialib/audio.html
+https://python.quectel.com/doc/quecpython/API_reference/en/medialib/audio.html
 """
 
 
@@ -11,7 +11,7 @@ class Audio(object):
     """Class feature: Audio playback.
 
     Currently supported modules：EC600N Series, EC800N Series, EC600M-CN(LA/LE), EC800M-CN(LA/LE/GA), EC600U Series, EC200U Series, EG912U, EG915U and EG915N-EUAG.
-    Description: https://python.quectel.com/doc/API_reference/en/medialib/audio.Audio.html
+    Description: https://python.quectel.com/doc/quecpython/API_reference/en/medialib/audio.Audio.html
     """
 
     def __init__(self, device):
@@ -143,7 +143,7 @@ class Record(object):
     """Class feature: Recording.
 
     Currently supported models: EC600N Series, EC800N Series, EC600M-CN(LA/LE), EC800M-CN(LA/LE/GA), EC600U Series, EC200U Series, EG912U, EG915U and EG915N-EUAG.
-    Description: https://python.quectel.com/doc/API_reference/en/medialib/audio.Record.html
+    Description: https://python.quectel.com/doc/quecpython/API_reference/en/medialib/audio.Record.html
     """
 
     def __init__(self, device):
@@ -314,7 +314,7 @@ class TTS(object):
     """Class Text-to-speech playback.
 
     Currently supported models: EC600N series, EC800N series, EC600M-CN (LA, LE), EC800M-CN (LA, LE, GA), EG810MCN_GA, EC600U series, EC200U series, EG912U, EG915U, EG915N-EUAG.
-    Description: https://developer.quectel.com/doc/quecpython/API_reference/zh/medialib/audio.TTS.html
+    Description: https://developer.quectel.com/doc/quecpython/API_reference/en/medialib/audio.TTS.html
     """
 
     def __init__(self, device):
