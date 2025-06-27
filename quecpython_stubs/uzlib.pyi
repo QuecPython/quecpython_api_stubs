@@ -21,8 +21,6 @@ def DecompIO(stream, wbits=0, bufsize=1):
     """Creates a stream decorator that allows data to be transparently compressed in another stream
     :param stream: stream to be compressed
     :param wbits:  wbits is the window size of DEFLATE dictionary when DecompIO.
-    :param bufsize: 
 
-    :return:
+
     """
-
