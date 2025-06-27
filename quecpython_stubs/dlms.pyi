@@ -2,6 +2,7 @@
 Function:
 This feature provides DLMS (Device Language Message Specification) server functionality
 for smart metering applications.
+The following interfaces are implemented in the LPA method and require users and card vendors to confirm whether the eSIM card supports LPA functionality.
 Applicable modules: All modules supporting DLMS functionality.
 """
 
