@@ -7,6 +7,7 @@ Descriptions taken from:
 https://python.quectel.com/doc/quecpython/API_reference/en/syslib/pm.html
 """
 
+from typing import Tuple, Union
 
 def create_wakelock(lock_name, name_size):
     """Creates a wakelock.
@@ -116,4 +117,19 @@ def get_psm_time():
     list[2]	int	Periodic value of TAU
     list[3]	int	ACT unit
     list[4]	int	Periodic value of ACT
+    """
+
+def get_psm_netinfo() -> Union[Tuple[int, int, int], int]:
+    """Retrieves current network Power Saving Mode configuration
+    
+    :return: 
+        Success: Returns tuple of (psm_mode, tau, active_time) where:
+            psm_mode: int - Power Saving Mode status (0: disabled, 1: enabled)
+            tau: int - Tracking Area Update timer value (seconds)
+            active_time: int - Active time duration (seconds)
+        Failure: Returns -1 (only possible error value)
+    
+    Behavior strictly matches:
+        mp_obj_new_list(3, [...]  -> Tuple[int,int,int]
+        mp_obj_new_int(-1)        -> int
     """

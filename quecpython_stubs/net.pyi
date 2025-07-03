@@ -7,7 +7,7 @@ See dataCall.setPDPContext for methods of how to configure the APN information.
 Descriptions taken from:
 https://python.quectel.com/doc/quecpython/API_reference/en/iotlib/net.html
 """
-
+from typing import Union
 
 def csqQueryPoll():
     """This method gets the signal strength.
@@ -311,4 +311,101 @@ def bandRst():
     Note: EG912N-ENAA series module supports this method.
 
     :return: 0 - Successful execution; -1 - Failed execution.
+    """
+
+def setCallback(handler: callable) -> int:
+    """Register a network event callback function
+    
+    :param handler: Python callable object
+
+    :return: 0 - Successful execution; -1 - Failed execution.
+    """
+
+def causeInfo(mode: int = None) -> int:
+    """Get or set cause info configuration
+    
+    :param mode: Optional configuration mode (0 or 1)
+                 When omitted, returns current mode
+    :return: 
+        Current mode (0 or 1) when getting
+        0 if success when setting
+        -1 if error occurred
+    :raises ValueError: If mode is not 0 or 1 when setting
+    """
+
+"""
+Network Timer and Status Configuration
+AT command interface for network parameters.
+"""
+
+def getT3402() -> Union[str, int]:
+    """Get T3402 timer value
+    
+    :return: 
+        str - Timer value string on success
+        -1 - Error occurred
+    """
+
+def getT3412() -> Union[str, int]:
+    """Get T3412 timer value
+    
+    :return: 
+        str - Timer value string on success
+        -1 - Error occurred
+    """
+
+def getT3324() -> Union[str, int]:
+    """Get T3324 timer value
+    
+    :return: 
+        str - Timer value string on success
+        -1 - Error occurred
+    """
+
+def getTeDRX() -> Union[str, int]:
+    """Get eDRX configuration
+    
+    :return: 
+        str - Configuration string on success
+        -1 - Error occurred
+    """
+
+def getTPTW() -> Union[str, int]:
+    """Get Paging Time Window value
+    
+    :return: 
+        str - Paging window string on success
+        -1 - Error occurred
+    """
+
+def getqRxlevMin(flag: int = None) -> Union[str, int, tuple]:
+    """Get qRxlevMin parameters
+    
+    :param flag: Optional flag (0 or 1)
+                 When 1, returns tuple of three values
+    :return: 
+        str - Single value when flag=None or 0
+        tuple - (qRxlevMin, qRxlevMinCE, qRxlevMinCE1) when flag=1
+        -1 - Error occurred
+    :raises ValueError: If flag is not 0 or 1
+    """
+
+def getRejectCause() -> Union[str, int]:
+    """Get network reject cause value
+    
+    :return: 
+        str - Reject cause string on success
+        -1 - Error occurred
+    """
+
+def causeInfo(mode: int = None) -> int:
+    """Get or set cause info configuration
+    
+    :param mode: Optional configuration mode (0 or 1)
+                 When omitted, returns current mode
+    :return: 
+        Current mode (0 or 1) when getting
+        0 if success when setting
+        -1 if error occurred
+    :raises ValueError: If mode is not 0 or 1 when setting
     """
