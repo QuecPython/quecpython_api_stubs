@@ -13,7 +13,7 @@ https://developer.quectel.com/doc/quecpython/Application_guide/en/network-comm/e
 
 from sim import esim
 
-def getEID() -> int:
+def getEid() -> int:
     """Set the ICCID of the eSIM card.
     
     :return: `ICCID` - Successful execution
