@@ -49,3 +49,5 @@ class MD5:
         
     def digest(self):
         """Return the digest of the hash algorithm."""
+
+md5 = MD5

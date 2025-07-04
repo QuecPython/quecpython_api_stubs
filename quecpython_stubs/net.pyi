@@ -67,6 +67,12 @@ def getCellInfo():
     Currently, it is meaningful to get this parameter only for BC25/BG95/EC600E/EC800E series module. This parameter is meaningless for other modules.
     """
 
+def currentCellInfo():
+    return getCellInfo()
+    """
+    The customer wants to use it in this way, so it was encapsulated.
+    """
+
 def getConfig():
     """This method gets the current network mode and roaming configuration.
 
@@ -321,17 +327,6 @@ def setCallback(handler: callable) -> int:
     :return: 0 - Successful execution; -1 - Failed execution.
     """
 
-def causeInfo(mode: int = None) -> int:
-    """Get or set cause info configuration
-    
-    :param mode: Optional configuration mode (0 or 1)
-                 When omitted, returns current mode
-    :return: 
-        Current mode (0 or 1) when getting
-        0 if success when setting
-        -1 if error occurred
-    :raises ValueError: If mode is not 0 or 1 when setting
-    """
 
 """
 Network Timer and Status Configuration
