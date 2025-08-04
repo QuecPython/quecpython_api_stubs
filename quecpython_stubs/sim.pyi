@@ -259,3 +259,48 @@ def setSwitchcardCallback(usrFun):
         8 - Failed switch
     :return: 0 - Successful execution; -1 - Failed execution
     """
+
+class esim:
+    
+    def getEid() -> int:
+        """Set the ICCID of the eSIM card.
+        
+        :return: `ICCID` - Successful execution
+        """
+    
+    def setCallback(usrFun:int) -> None:
+        """Notify the application layer of the results of downloading and installing the Profile.
+        
+        :return: `None`
+        """
+    
+    def getProfileInfo(mode:int) -> list[dict]:
+        """Query the current SIM card configuration file
+        
+        :return: `list[dict]` - Successful execution
+        """
+    
+    def profileOTA(activationCode, confirmationCode) -> int:
+        """Download and install the Operator Profile
+        
+        :param result: Result of OTA profile download.
+        :type result: Integer, 0: success, 1: failure
+        """    
+    
+    def profileHandle(profile_tag:int, iccid:str) -> int:
+        """Control the current SIM card configuration file
+        
+        :return: `0` - Successful execution; `-1` - Failed execution        
+        """
+    
+    def getProfileDelNotification() -> list[dict]:
+        """Obtain the configuration file to be deleted
+
+        return:'The list of configuration files to be deleted'
+        """
+    
+    def reportProfileDelNotification(iccid:str) -> list[dict]:
+        """Report the configuration file to be deleted
+        
+        return:'The list of configuration files to be deleted'
+        """

@@ -11,7 +11,7 @@ For information on configuring the APN, refer to the dataCall.setPDPContext meth
 Descriptions taken from:
 https://python.quectel.com/doc/quecpython/API_reference/en/iotlib/dataCall.html
 """
-
+from typing import Optional, Union, Any
 
 def setPDPContext(profileID, ipType, apn, username, password, authType):
     """Configures the relevant information of the PDP context, and saves the configuration information when power is off. When establishing the channel, use the parameters configured by this method to activate the PDP context.
@@ -159,4 +159,40 @@ def getInfo(profileID, ipType):
     The return value (1, 0, [0, 0, '0.0.0.0', '0.0.0.0', '0.0.0.0']) indicates that the establishment has not been performed or has failed.
     Modules that support this method: EC100Y/EC200N/EC600N/EC600S/EC800N/EG912N/EG915N/EC600M/EC800M/EG810M/EC200A/EC200U/EC600U/EG912U/EG915U/EC600G/EC800G/EC600E/EC800E/BG95/BC25/BC95 series module.
     Since it should be compatible with the old version of dataCall.getInfo, the maximum value of the actual profileID is greater than 3, and the actual profileID that can be queried shall prevail.
+    """
+
+def start(
+    profileidx: int,
+    iptype: int = 0,
+    apn: str = "",
+    username: str = "",
+    password: str = "",
+    authtype: int = 0,
+    cur_simid: Optional[int] = None
+) -> Union[int, Any]:  # 根据dial.start实际返回值确定
+    """Activate PDP context
+    
+    :param profileidx: PDP profile index (required)
+    :param iptype: IP type (default 0)
+    :param apn: Access Point Name (default "")
+    :param username: Authentication username (default "")
+    :param password: Authentication password (default "")
+    :param authtype: Authentication type (default 0)
+    :param cur_simid: Optional SIM ID (default None)
+    :return: 
+        int - 0 on success, -1 on failure
+        Any - dial.start() may return other types
+    """
+
+def stop(
+    profileidx: int,
+    iptype: int,
+    cur_simid: Optional[int] = None
+) -> int:
+    """Deactivate PDP context
+    
+    :param profileidx: PDP profile index (required)
+    :param iptype: IP type (required)
+    :param cur_simid: Optional SIM ID (default None)
+    :return: dial.stop() return value (assumed int)
     """
